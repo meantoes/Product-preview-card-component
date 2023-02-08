@@ -89,6 +89,8 @@ button {
     column-gap: 10px;
     justify-content: center;
     padding: 15px 0 15px 0;
+    
+    transition: all 0.15s;
 }
 
 @media all and (min-width:  1440px) {
@@ -110,4 +112,9 @@ button {
     h1 {
         font-size: 35px;
     }
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
 }
