@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.picture, .image-product {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: block;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.perfume, .texts, .price-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    
+    margin: 0;
+}
+
+.perfume {
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 33px;
+    text-transform: capitalize;
+}
+
+.texts {
+    line-height: 25px;
+}
+
+p {
+    margin: 0;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.price-2 {
+    text-decoration: line-through;
+} 
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+
+    transition: all 0.15s;
+}
+
+@media all and (min-width:  640px) {
+    main {
+        grid-template-columns: 300px 300px;
+    }
+
+    .image-product {
+        border-radius: 0;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .contents {
+        padding: 10px;
+    }
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
